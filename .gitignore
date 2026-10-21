@@ -1,0 +1,27 @@
+# Byte-code
+*.class
+
+# Maven build outputs
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IDE & Editor settings
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Compiled bin output
+bin/
+out/
+
+# Log files & OS metadata
+*.log
+Thumbs.db
+Desktop.ini
