@@ -34,7 +34,7 @@ public class Main {
             pstmt = conn.prepareStatement(insertQuery);
 
             pstmt.setInt(1, 101);                         // id
-            pstmt.setString(2, "Sahil Sepat");               // name
+            pstmt.setString(2, "Saksham Nagar");               // name
             pstmt.setString(3, "Computer Science");       // branch
 
             // Step 11: Execute

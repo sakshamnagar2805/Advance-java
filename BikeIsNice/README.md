@@ -97,7 +97,7 @@ The [`shopsphere.sql`](shopsphere.sql) script creates the `shopsphere` database 
 ### Step 1: Import Schema & Seed Data
 Run the following command in your terminal:
 ```bash
-mysql -u root -ppassword < /home/sahil-sepat/Desktop/ShopSphare/shopsphere.sql
+mysql -u root -ppassword < shopsphere.sql
 ```
 *(Replace `password` with your actual MySQL root password if different).*
 
@@ -150,7 +150,7 @@ chmod +x *.sh
 ### Step 2: Package the Application
 Build the Web Application Archive (`shopsphere.war`):
 ```bash
-cd /home/sahil-sepat/Desktop/ShopSphare
+cd BikeIsNice
 mvn clean package
 ```
 *Note: A pre-compiled and updated `shopsphere.war` is also located in the `target/` directory.*
@@ -158,7 +158,7 @@ mvn clean package
 ### Step 3: Deploy to Tomcat 11
 Copy the WAR file into your Tomcat `webapps/` folder:
 ```bash
-cp /home/sahil-sepat/Desktop/ShopSphare/target/shopsphere.war ~/Desktop/apache-tomcat-11.0.26/webapps/
+cp target/shopsphere.war <path-to-tomcat>/webapps/
 ```
 
 ### Step 4: Start Tomcat
@@ -187,7 +187,7 @@ ShopSphere includes a native desktop application for store administrators. It pr
 
 ### How to Launch the Desktop GUI
 ```bash
-cd /home/sahil-sepat/Desktop/ShopSphare
+cd BikeIsNice
 java -cp target/classes com.shopsphere.desktop.LoginFrame
 ```
 
@@ -207,7 +207,7 @@ Two standalone networking modules demonstrate distributed communication without 
 ### Option A: One-Command Automated Test Suite
 Run the bundled test script to compile and run both networking modules:
 ```bash
-cd /home/sahil-sepat/Desktop/ShopSphare
+cd BikeIsNice
 ./test-networking.sh
 ```
 
@@ -260,7 +260,7 @@ This module demonstrates remote procedure calls over JRMP, remote interface stub
 ## 6. Project Directory Structure
 
 ```
-ShopSphare/
+BikeIsNice/
 ├── pom.xml                                      # Maven WAR build configuration (Jakarta EE 11)
 ├── shopsphere.sql                               # MySQL 8 schema, 12 tables, constraints & seed data
 ├── test-networking.sh                           # Automated test runner for Sockets and RMI
