@@ -1,0 +1,17 @@
+{
+  "name": "shopsphere-bikeisnice",
+  "version": "1.0.0",
+  "description": "BikeIsNice (ShopSphere) E-Commerce & RTU Advanced Java Showcase Local Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "shopsphere",
+    "bikeisnice",
+    "java",
+    "rtu-advanced-java"
+  ],
+  "author": "Saksham Nagar",
+  "license": "MIT"
+}
